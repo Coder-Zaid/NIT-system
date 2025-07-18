@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - NIT</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans antialiased bg-dark text-light">
+    <!-- Navigation -->
+    <nav class="bg-darker shadow-lg w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="index.html" class="flex items-center">
+                    <img src="images/logo.png" alt="NIT Logo" class="h-12 mr-3">
+                    <span class="text-2xl font-bold text-primary">NIT</span>
+                </a>
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="certificate.html" class="nav-link">Certificate</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Contact Section -->
+    <section class="py-20 px-4 fade-in-section">
+        <div class="max-w-2xl mx-auto text-center">
+            <div id="contact-msg" class="hidden mb-6 p-4 rounded bg-primary text-white font-bold text-lg"></div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
+            <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                We'd love to hear from you! Reach out to us using the information below.
+            </p>
+            <div class="bg-light rounded-lg shadow-lg p-8 mb-8 text-dark text-left">
+                <div class="mb-4 flex items-center">
+                    <i class="fas fa-map-marker-alt text-primary mr-3"></i>
+                    <span>7086, Prince Majid Ibn Abdulaziz street, Khobar Shamliyah Al Khobar, 34427</span>
+                </div>
+                <div class="mb-4 flex items-center">
+                    <i class="fas fa-phone-alt text-primary mr-3"></i>
+                    <a href="tel:+966503160542" class="text-primary">+966 50 316 0542</a>
+                </div>
+                <div class="mb-4 flex items-center">
+                    <i class="fas fa-envelope text-primary mr-3"></i>
+                    <a href="mailto:salman.ahmed702@gmail.com" class="text-primary">salman.ahmed702@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+    // Show message if ?msg=contact-solution is in the URL
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('msg') === 'contact-solution') {
+        const msgDiv = document.getElementById('contact-msg');
+        msgDiv.textContent = 'Contact us and get the solution.';
+        msgDiv.classList.remove('hidden');
+    }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="NIT - Network Information Technology" data-ar="نيت - تكنولوجيا معلومات الشبكات">NIT - Network Information Technology</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-sans antialiased bg-dark text-light">
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+      <img id="nit-logo" src="images/favicon.png" alt="NIT Logo" style="width:120px;height:120px;opacity:0;transform:scale(0.8);" />
+    </div>
+    <!-- Navigation -->
+    <nav class="bg-darker shadow-lg fixed w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="images/logo.png" alt="NIT Logo" class="h-12 mr-3">
+                        <span class="text-2xl font-bold text-primary">NIT</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 rtl:space-x-0 rtl:space-x-reverse">
+                    <a href="index.html" class="nav-link active" data-en="Home" data-ar="الرئيسية">Home</a>
+                    <a href="about.html" class="nav-link" data-en="About" data-ar="من نحن">About</a>
+                    <a href="services.html" class="nav-link" data-en="Services" data-ar="خدماتنا">Services</a>
+                    <a href="certificate.html" class="nav-link" data-en="Certificate" data-ar="شهادة">Certificate</a>
+                    <a href="contact.html" class="nav-link" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+                    <div class="flex space-x-4 rtl:space-x-reverse">
+                        <a href="#contact" class="btn-primary" data-en="Get Started" data-ar="ابدأ الآن">
+                            Get Started
+                        </a>
+                        <button id="language-switcher" class="px-4 py-2 border border-primary text-primary rounded-md text-sm font-medium transition-colors duration-200 hover:bg-primary hover:bg-opacity-10 focus:outline-none">
+                            <span class="en-lang">عربي</span>
+                            <span class="ar-lang hidden">English</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button text-gray-300 hover:text-white">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero pt-32 pb-20 px-4 fade-in-section parallax-bg">
+        <div class="max-w-7xl mx-auto">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 rtl:order-2 rtl:md:pl-12 fade-in-up">
+                    <span class="inline-block text-sm font-semibold text-primary mb-4"
+                          data-en="WELCOME TO NIT"
+                          data-ar="مرحبًا بكم في نيت">
+                        WELCOME TO NIT
+                    </span>
+                    <p class="hero-typewriter typewriter text-4xl md:text-6xl font-bold mb-6 leading-tight hero-reveal">
+                        Innovative <span class="text-gradient">Network</span> <br>
+                        <span class="text-gradient">Solutions</span> <br>
+                        for Your Business
+                    </p>
+                    <p class="text-xl text-gray-300 mb-8 leading-relaxed fade-in-up"
+                       data-en="We provide cutting-edge IT infrastructure and network solutions to help your business thrive in the digital age."
+                       data-ar="نوفر بنية تحتية تقنية وحلول شبكات متطورة لمساعدة عملك على الازدهار في العصر الرقمي.">
+                        We provide cutting-edge IT infrastructure and network solutions to help your business thrive in the digital age.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 rtl:space-x-0 rtl:space-x-reverse fade-in-up">
+                        <a href="contact.html?msg=contact-solution" class="btn-primary text-center btn-ripple">
+                            <span data-en="Get Started" data-ar="ابدأ الآن">Get Started</span>
+                        </a>
+                        <a href="#services" class="btn-secondary text-center btn-ripple">
+                            <span data-en="Our Services" data-ar="خدماتنا">Our Services</span>
+                        </a>
+                    </div>
+                    <div class="mt-12 flex flex-wrap gap-6">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-3">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <span class="text-gray-300" data-en="24/7 Support" data-ar="دعم على مدار الساعة">24/7 Support</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mr-3">
+                                <i class="fas fa-check text-primary"></i>
+                            </div>
+                            <span class="text-gray-300" data-en="Certified Experts" data-ar="خبراء معتمدون">Certified Experts</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 rtl:order-1 fade-in-up" style="animation-delay: 0.2s">
+                    <div class="relative">
+                        <div class="absolute -top-6 -right-6 w-full h-full border-4 border-primary rounded-lg z-0"></div>
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Network Solutions" 
+                             class="relative z-10 rounded-lg shadow-2xl border-4 border-white">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-4 bg-dark fade-in-section">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 fade-in-up">
+                <span class="inline-block text-sm font-semibold text-primary mb-4"
+                      data-en="OUR SERVICES"
+                      data-ar="خدماتنا">
+                    OUR SERVICES
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    <span>Comprehensive <span class="text-gradient">IT Solutions</span></span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto"
+                   data-en="We provide comprehensive IT solutions tailored to your business needs"
+                   data-ar="نوفر حلول تقنية شاملة مصممة خصيصًا لاحتياجات عملك">
+                    We provide comprehensive IT solutions tailored to your business needs
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card fade-in-up slide-in-right card-tilt" style="animation-delay: 0.2s">
+                    <div class="w-16 h-16 rounded-full bg-primary bg-opacity-10 flex items-center justify-center mb-6">
+                        <i class="fas fa-phone-volume text-2xl text-primary icon-animate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">IP Telephone System</h3>
+                    <p class="text-gray-400">Modern VoIP and IP telephone solutions for seamless business communication.</p>
+                </div>
+                <div class="service-card fade-in-up slide-in-left card-tilt" style="animation-delay: 0.3s">
+                    <div class="w-16 h-16 rounded-full bg-primary bg-opacity-10 flex items-center justify-center mb-6">
+                        <i class="fas fa-video text-2xl text-primary icon-animate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">CCTV & Access Control</h3>
+                    <p class="text-gray-400">Advanced CCTV surveillance and access control systems for enhanced security.</p>
+                </div>
+                <div class="service-card fade-in-up slide-in-right card-tilt" style="animation-delay: 0.4s">
+                    <div class="w-16 h-16 rounded-full bg-primary bg-opacity-10 flex items-center justify-center mb-6">
+                        <i class="fas fa-tools text-2xl text-primary icon-animate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">AC Repairing & Installation</h3>
+                    <p class="text-gray-400">Professional air conditioning repair and installation services for homes and businesses.</p>
+                </div>
+                <div class="service-card fade-in-up slide-in-left card-tilt" style="animation-delay: 0.5s">
+                    <div class="w-16 h-16 rounded-full bg-primary bg-opacity-10 flex items-center justify-center mb-6">
+                        <i class="fas fa-network-wired text-2xl text-primary icon-animate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Network Cabling & Installation</h3>
+                    <p class="text-gray-400">Structured cabling and network installation for reliable connectivity and performance.</p>
+                </div>
+                <div class="service-card fade-in-up slide-in-right card-tilt" style="animation-delay: 0.6s">
+                    <div class="w-16 h-16 rounded-full bg-primary bg-opacity-10 flex items-center justify-center mb-6">
+                        <i class="fas fa-headset text-2xl text-primary icon-animate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">IT Support</h3>
+                    <p class="text-gray-400">Proactive IT support and maintenance to ensure your systems run smoothly and efficiently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 bg-gray-50 fade-in-section">
+        <div class="max-w-7xl mx-auto">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12 rtl:md:pr-0 rtl:md:pl-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+                        data-en="About NIT"
+                        data-ar="عن نيت">
+                        About NIT
+                    </h2>
+                    <div class="w-24 h-1 bg-primary mb-6"></div>
+                    <p class="text-gray-600 mb-6 leading-relaxed"
+                       data-en="At NIT, we're committed to delivering innovative technology solutions that empower businesses to thrive in the digital age. With years of experience in the industry, our team of experts provides reliable, scalable, and secure IT services."
+                       data-ar="نحن في نيت ملتزمون بتقديم حلول تكنولوجية مبتكرة تمكن الشركات من الازدهار في العصر الرقمي. مع سنوات من الخبرة في المجال، يقدم فريقنا من الخبراء خدمات تقنية موثوقة وقابلة للتطوير وآمنة.">
+                        At NIT, we're committed to delivering innovative technology solutions that empower businesses to thrive in the digital age. With years of experience in the industry, our team of experts provides reliable, scalable, and secure IT services.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed"
+                       data-en="Our mission is to help organizations leverage technology to achieve their business goals while maintaining the highest standards of quality and security."
+                       data-ar="مهمتنا هي مساعدة المؤسسات على الاستفادة من التكنولوجيا لتحقيق أهدافها التجارية مع الحفاظ على أعلى معايير الجودة والأمان.">
+                        Our mission is to help organizations leverage technology to achieve their business goals while maintaining the highest standards of quality and security.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 ml-2 rtl:ml-0 rtl:mr-2"></i>
+                            <span class="text-gray-700"
+                                  data-en="Expert Team"
+                                  data-ar="فريق خبير">
+                                Expert Team
+                            </span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 ml-2 rtl:ml-0 rtl:mr-2"></i>
+                            <span class="text-gray-700"
+                                  data-en="24/7 Support"
+                                  data-ar="دعم على مدار الساعة">
+                                24/7 Support
+                            </span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 ml-2 rtl:ml-0 rtl:mr-2"></i>
+                            <span class="text-gray-700"
+                                  data-en="Cutting-edge Technology"
+                                  data-ar="تكنولوجيا متطورة">
+                                Cutting-edge Technology
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 rtl:order-1">
+                    <div class="relative">
+                        <div class="absolute -top-6 -left-6 w-full h-full border-4 border-blue-600 rounded-lg z-0"></div>
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Our Team" 
+                             class="relative z-10 rounded-lg shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="py-16 px-4 bg-darker fade-in-section">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h3 class="text-sm font-semibold text-primary mb-4"
+                    data-en="TRUSTED BY INDUSTRY LEADERS"
+                    data-ar="موثوق به من قبل قادة الصناعة">
+                    TRUSTED BY INDUSTRY LEADERS
+                </h3>
+                <div class="w-16 h-0.5 bg-primary mx-auto mb-6"></div>
+            </div>
+            <div class="clients-grid">
+                <!-- Client 1 -->
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/150x60/1a1a2e/4A6FA5?text=Client+1" alt="Client Logo">
+                </div>
+                <!-- Client 2 -->
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/150x60/1a1a2e/4A6FA5?text=Client+2" alt="Client Logo">
+                </div>
+                <!-- Client 3 -->
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/150x60/1a1a2e/4A6FA5?text=Client+3" alt="Client Logo">
+                </div>
+                <!-- Client 4 -->
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/150x60/1a1a2e/4A6FA5?text=Client+4" alt="Client Logo">
+                </div>
+                <!-- Client 5 -->
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/150x60/1a1a2e/4A6FA5?text=Client+5" alt="Client Logo">
+                </div>
+                <!-- Client 6 -->
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/150x60/1a1a2e/4A6FA5?text=Client+6" alt="Client Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 bg-primary text-white fade-in-section">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6"
+                data-en="Ready to Transform Your Business?"
+                data-ar="هل أنت مستعد لتحويل عملك؟">
+                Ready to Transform Your Business?
+            </h2>
+            <p class="text-xl mb-8 text-blue-100 max-w-3xl mx-auto"
+               data-en="Let's discuss how our IT solutions can help your business grow and succeed in the digital world."
+               data-ar="دعنا نناقش كيف يمكن لحلولنا التقنية مساعدة عملك على النمو والنجاح في العالم الرقمي.">
+                Let's discuss how our IT solutions can help your business grow and succeed in the digital world.
+            </p>
+            <a href="contact.html?msg=contact-solution" class="cta-btn"
+               data-en="Get a Free Consultation"
+               data-ar="احصل على استشارة مجانية">
+                Get a Free Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">NIT</h3>
+                    <p class="text-gray-400 mb-6"
+                       data-en="Empowering businesses with innovative technology solutions for the digital age."
+                       data-ar="تمكين الشركات من خلال حلول تكنولوجية مبتكرة لعصر رقمي متطور.">
+                        Empowering businesses with innovative technology solutions for the digital age.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition icon-animate"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition icon-animate"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition icon-animate"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition icon-animate"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6"
+                        data-en="Quick Links"
+                        data-ar="روابط سريعة">
+                        Quick Links
+                    </h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition"
+                               data-en="Home"
+                               data-ar="الرئيسية">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition"
+                               data-en="About Us"
+                               data-ar="من نحن">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition"
+                               data-en="Services"
+                               data-ar="خدماتنا">Services</a></li>
+                        <li><a href="certificate.html" class="text-gray-400 hover:text-white transition"
+                               data-en="Certificate"
+                               data-ar="شهادة">Certificate</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition"
+                               data-en="Contact"
+                               data-ar="اتصل بنا">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6"
+                        data-en="Our Services"
+                        data-ar="خدماتنا">
+                        Our Services
+                    </h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition"
+                               data-en="Network Solutions"
+                               data-ar="حلول الشبكات">Network Solutions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition"
+                               data-en="Cybersecurity"
+                               data-ar="الأمن السيبراني">Cybersecurity</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition"
+                               data-en="Cloud Services"
+                               data-ar="الحلول السحابية">Cloud Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition"
+                               data-en="IT Consulting"
+                               data-ar="الاستشارات التقنية">IT Consulting</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition"
+                               data-en="Managed Services"
+                               data-ar="الخدمات المدارة">Managed Services</a></li>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6"
+                        data-en="Contact Us"
+                        data-ar="اتصل بنا">
+                        Contact Us
+                    </h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt text-primary mr-2"></i> 7086, Prince Majid Ibn Abdulaziz street, Khobar Shamliyah Al Khobar, 34427</li>
+                        <li class="flex items-center"><i class="fas fa-phone-alt text-primary mr-2"></i> +966 50 316 0542</li>
+                        <li class="flex items-center"><i class="fas fa-envelope text-primary mr-2"></i> <a href="mailto:salman.ahmed702@gmail.com" class="hover:underline">salman.ahmed702@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p data-en="&copy; 2025 NIT - Network Information Technology. All rights reserved."
+                   data-ar="&copy; 2025 نيت - تكنولوجيا معلومات الشبكات. جميع الحقوق محفوظة.">
+                    &copy; 2025 NIT - Network Information Technology. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/DrawSVGPlugin.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
